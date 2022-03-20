@@ -1,5 +1,5 @@
 import React, { ChangeEventHandler, HTMLInputTypeAttribute } from "react";
-import { FormHelperText, Input, Label } from "..";
+import { Input, Label } from "..";
 
 interface Props {
   labelText: string;
@@ -8,7 +8,6 @@ interface Props {
   onChange: ChangeEventHandler;
   typeInput: HTMLInputTypeAttribute;
   placeholder?: string;
-  textError: string;
   nameInput?: string;
   size?: "full" | "50";
 }
@@ -20,7 +19,6 @@ export const FormControl = ({
   onChange,
   typeInput,
   placeholder = "",
-  textError = "",
   nameInput = "",
   size = "full",
 }: Props) => {
@@ -40,7 +38,6 @@ export const FormControl = ({
         name={nameInput}
         className="bg-slate-200 outline-none focus:bg-slate-50 focus:shadow font-normal h-10 rounded-lg py-1 px-2 text-md block w-full"
       />
-      <FormHelperText text={textError} />
     </div>
   );
 };
