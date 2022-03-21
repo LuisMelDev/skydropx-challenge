@@ -1,11 +1,11 @@
 import React from "react";
 import { shallow } from "enzyme";
-import { Button } from "../components/atoms/Button";
+import { Label } from "../components/atoms/Label";
 
 
-describe("Pruebas <Button>", () => {
+describe("Pruebas <Label>", () => {
     
-    let wrapper = shallow(<Button>hola</Button>);
+    let wrapper = shallow(<Label htmlFor="input" text="texto" />);
     
     test("debe de mostrarse correctamente", () => {
         expect(wrapper).toMatchSnapshot();

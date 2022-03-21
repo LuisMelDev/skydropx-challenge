@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas <Label> debe de mostrarse correctamente 1`] = `
+<label
+  className=""
+  htmlFor="input"
+>
+  texto
+</label>
+`;

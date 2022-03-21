@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas <Th> debe de mostrarse correctamente 1`] = `
+<th
+  className="px-5 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider"
+>
+  texto
+</th>
+`;

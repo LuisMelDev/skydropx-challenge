@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas <ItemTable> debe de mostrarse correctamente 1`] = `
+<tr
+  className="hover:bg-gray-100 active:bg-gray-200 cursor-pointer transition ease-in-out delay-80"
+  onClick={[MockFunction]}
+>
+  <Td>
+    <div
+      className="flex items-center"
+    >
+      <p>
+        CARSSA
+      </p>
+    </div>
+  </Td>
+  <Td>
+    <p>
+      Nacional
+    </p>
+  </Td>
+  <Td>
+    <p>
+      10
+       dias
+    </p>
+  </Td>
+  <Td>
+    <p>
+      134.0
+       MXN
+    </p>
+  </Td>
+  <Td>
+    <Tab
+      text="Mejor Opcion"
+    />
+  </Td>
+</tr>
+`;

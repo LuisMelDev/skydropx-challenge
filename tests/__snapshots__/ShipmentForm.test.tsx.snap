@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas <ShipmentForm> debe de mostrarse correctamente 1`] = `
+<form
+  className="max-w-lg bg-slate-50 rounded-lg p-5 shadow-lg"
+  onSubmit={[Function]}
+>
+  <h3
+    className="pb-5 text-4xl font-bold text-center text-gray-700"
+  >
+    Cotiza Tu Envio
+  </h3>
+  <div>
+    <div
+      className="full block mb-3"
+    >
+      <label
+        className="text-sm font-light block"
+        htmlFor="zip_from"
+      >
+        Codigo Postal de Origen
+      </label>
+      <input
+        className="bg-slate-200 outline-none focus:bg-slate-50 focus:shadow font-normal h-10 rounded-lg py-1 px-2 text-md block w-full"
+        id="zip_from"
+        name="zip_from"
+        onChange={[Function]}
+        placeholder=""
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="full block mb-3"
+    >
+      <label
+        className="text-sm font-light block"
+        htmlFor="zip_to"
+      >
+        Codigo Postal de Destino
+      </label>
+      <input
+        className="bg-slate-200 outline-none focus:bg-slate-50 focus:shadow font-normal h-10 rounded-lg py-1 px-2 text-md block w-full"
+        id="zip_to"
+        name="zip_to"
+        onChange={[Function]}
+        placeholder=""
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="my-3 text-center"
+    >
+      Medidas del Paquete
+    </div>
+    <div
+      className="flex flex-wrap justify-around"
+    >
+      <div
+        className="w-5/12 inline-block mb-3"
+      >
+        <label
+          className="text-sm font-light block"
+          htmlFor="length"
+        >
+          Largo (cm)
+        </label>
+        <input
+          className="bg-slate-200 outline-none focus:bg-slate-50 focus:shadow font-normal h-10 rounded-lg py-1 px-2 text-md block w-full"
+          id="length"
+          name="length"
+          onChange={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="w-5/12 inline-block mb-3"
+      >
+        <label
+          className="text-sm font-light block"
+          htmlFor="height"
+        >
+          Alto (cm)
+        </label>
+        <input
+          className="bg-slate-200 outline-none focus:bg-slate-50 focus:shadow font-normal h-10 rounded-lg py-1 px-2 text-md block w-full"
+          id="height"
+          name="height"
+          onChange={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="w-5/12 inline-block mb-3"
+      >
+        <label
+          className="text-sm font-light block"
+          htmlFor="width"
+        >
+          Ancho (cm)
+        </label>
+        <input
+          className="bg-slate-200 outline-none focus:bg-slate-50 focus:shadow font-normal h-10 rounded-lg py-1 px-2 text-md block w-full"
+          id="width"
+          name="width"
+          onChange={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="w-5/12 inline-block mb-3"
+      >
+        <label
+          className="text-sm font-light block"
+          htmlFor="weight"
+        >
+          Peso (kg)
+        </label>
+        <input
+          className="bg-slate-200 outline-none focus:bg-slate-50 focus:shadow font-normal h-10 rounded-lg py-1 px-2 text-md block w-full"
+          id="weight"
+          name="weight"
+          onChange={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="w-full my-2 text-red-500"
+    />
+    <button
+      className="w-full bg-sky-600 rounded-lg p-2 text-white shadow"
+      type="submit"
+    >
+      Enviar Cotizacion
+    </button>
+  </div>
+</form>
+`;

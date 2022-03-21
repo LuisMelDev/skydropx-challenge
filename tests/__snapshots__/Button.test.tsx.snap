@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button debe de mostrarse correctamente 1`] = `
+exports[`Pruebas <Button> debe de mostrarse correctamente 1`] = `
 <button
   type="button"
 >

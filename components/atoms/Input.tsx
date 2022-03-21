@@ -2,7 +2,7 @@ import React, { ChangeEventHandler, HTMLInputTypeAttribute } from "react";
 
 interface Props {
   placeholder?: string;
-  onChange: ChangeEventHandler;
+  onChange?: ChangeEventHandler;
   className?: string;
   id: string;
   type: HTMLInputTypeAttribute;

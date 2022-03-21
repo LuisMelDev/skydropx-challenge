@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas <ErrorMessage> debe de mostrarse correctamente 1`] = `
+<input
+  className=""
+  id="inputPrueba"
+  name=""
+  onChange={[MockFunction]}
+  placeholder=""
+  type="text"
+  value=""
+/>
+`;

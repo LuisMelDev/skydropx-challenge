@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas <FormControl> debe de mostrarse correctamente 1`] = `
+<div
+  className="full block mb-3"
+>
+  <Label
+    className="text-sm font-light block"
+    htmlFor="idPrueba"
+    text="labelTest"
+  />
+  <Input
+    className="bg-slate-200 outline-none focus:bg-slate-50 focus:shadow font-normal h-10 rounded-lg py-1 px-2 text-md block w-full"
+    id="idPrueba"
+    name=""
+    onChange={[MockFunction]}
+    placeholder=""
+    type="text"
+    value=""
+  />
+</div>
+`;

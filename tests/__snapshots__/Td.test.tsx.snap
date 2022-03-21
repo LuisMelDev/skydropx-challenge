@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas <Td> debe de mostrarse correctamente 1`] = `
+<td
+  className="px-5 py-5 border-b border-gray-200 text-sm text-gray-900 whitespace-no-wrap"
+>
+  <span>
+    Text prueba
+  </span>
+</td>
+`;
