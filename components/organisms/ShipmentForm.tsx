@@ -1,13 +1,8 @@
-import React, {
-    useState,
-    ChangeEventHandler,
-    Dispatch,
-    SetStateAction,
-    FormEventHandler,
-} from "react";
+import React, { useState, ChangeEventHandler, FormEventHandler } from "react";
+import { useDispatch } from "react-redux";
 import { Button, FormControl } from "..";
-import { createShipment } from "services/shipments";
 import { getBodyShipment } from "utils";
+import { startAddShipment } from "redux/actions";
 
 var only_numbers = /^\d+$/;
 
@@ -29,11 +24,7 @@ interface StateError {
     error: FormErrors | null;
 }
 
-export const ShipmentForm = ({
-    setShipment,
-}: {
-    setShipment: Dispatch<SetStateAction<string>>;
-}) => {
+export const ShipmentForm = () => {
     const [formulario, setFormulario] = useState<ValueShipmentForm>({
         zip_from: "",
         height: "",
@@ -42,6 +33,7 @@ export const ShipmentForm = ({
         width: "",
         zip_to: "",
     });
+    const dispatch = useDispatch();
 
     const [error, setError] = useState<StateError>({ error: null });
 
@@ -81,21 +73,15 @@ export const ShipmentForm = ({
             setError({ error: FormErrors.VALIDATION_ERROR });
             return;
         }
-        const body = getBodyShipment(formulario);
 
-        createShipment(body)
-            .then((resp) => {
-                setShipment(resp.data.data?.id);
-            })
-            .catch((error) => {
-                console.log(error);
-            });
+        const body = getBodyShipment(formulario);
+        dispatch(startAddShipment(body))
     };
 
     return (
         <form
             onSubmit={onSubmit}
-            className='w-4/12 max-w-screen-lg bg-slate-50 rounded-lg p-5 shadow-lg'
+            className='max-w-lg bg-slate-50 rounded-lg p-5 shadow-lg'
         >
             <h3 className='pb-5 text-4xl font-bold text-center text-gray-700'>
                 Cotiza Tu Envio
@@ -156,7 +142,7 @@ export const ShipmentForm = ({
                         size='50'
                     />
                 </div>
-                <div className='w-full'>
+                <div className='w-full my-2 text-red-500'>
                     {error?.error === FormErrors.ALL_REQUIRED && (
                         <span>Todos los campos son requeridos</span>
                     )}
